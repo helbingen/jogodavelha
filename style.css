@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+}
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.O{
+    position: relative;
+}
+
+.O:after{
+    content: '\274C';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.X{
+    position: relative;
+}
+
+.X:after{
+    content: '\2B55';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+input{
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: beige;
+    border: 1px solid gray;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:340px){
+    .quadrado{
+        width: 50px;
+        height: 50px;
+}
+.O:after{
+    font-size: 25px;
+    line-height: 50px;
+}
+.X:after{
+    font-size: 25px;
+    line-height: 50px;
+}
+}
